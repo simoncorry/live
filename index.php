@@ -1,4 +1,4 @@
-<!--  --><!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]><html lang="en" class="ie6 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]--> 
 <!--[if IE 7]>   <html lang="en" class="ie7 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]--> 
 <!--[if IE 8]>   <html lang="en" class="ie8 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]--> 
@@ -38,7 +38,8 @@
 <!-- ////////////////////////////////////////////////// -->
 
 <title>Simon Corry &raquo; Home &raquo; Science &amp; Creativity</title>
-<!-- FOR MOBILE VERSION SOON <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+<meta name="viewport" content="user-scalable=no">
+<meta name="app-mobile-web-app-capable" content="yes" />
 <meta name="Author" content="Simon Corry" />
 <meta name="description" content="Welcome one and all to the new home of science and creativity."/>
 <meta name="keywords" content="simon corry, science &amp; creativity, user experience design, information architecture, design &amp; development"/>
