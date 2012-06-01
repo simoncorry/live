@@ -38,7 +38,8 @@
 <!-- ////////////////////////////////////////////////// -->
 
 <title>Simon Corry &raquo; Portfolio &raquo; Science &amp; Creativity</title>
-<!-- FOR MOBILE VERSION SOON <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+<meta name="viewport" content="user-scalable=no">
+<meta name="app-mobile-web-app-capable" content="yes" />
 <meta name="Author" content="Simon Corry" />
 <meta name="description" content="Simon's online mixing pot, featuring various projects inspired by clients and the lab."/>
 <meta name="keywords" content="simon corry, pixels simon corry, science &amp; creativity, user experience design, user interaction design, information architecture, design &amp; development"/>
