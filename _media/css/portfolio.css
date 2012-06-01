@@ -61,8 +61,6 @@
     width:100%;
     height:auto;
     -webkit-transform-style:preserve-3d; /* CHROME FLASH FIX */
-    -webkit-backface-visibility:hidden; /* FIX FOR JAGGED EDGES */
-    backface-visibility:hidden; /* FIX FOR JAGGED EDGES */   
 }
 
 .project-content {

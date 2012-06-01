@@ -60,9 +60,7 @@
 #lifestream-wrapper {
     width:auto;
     height:auto;
-    -webkit-transform-style:preserve-3d; /* CHROME FLASH FIX */
-    -webkit-backface-visibility:hidden; /* FIX FOR JAGGED EDGES */
-    backface-visibility:hidden; /* FIX FOR JAGGED EDGES */  
+    -webkit-transform-style:preserve-3d; /* CHROME FLASH FIX */ 
 }
 
 #lifestream-content {
