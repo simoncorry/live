@@ -39,7 +39,7 @@
 
 <title>Simon Corry &raquo; Home &raquo; Science &amp; Creativity</title>
 <meta name="viewport" content="user-scalable=no">
-<meta name="app-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="Author" content="Simon Corry" />
 <meta name="description" content="Welcome one and all to the new home of science and creativity."/>
 <meta name="keywords" content="simon corry, science &amp; creativity, user experience design, information architecture, design &amp; development"/>

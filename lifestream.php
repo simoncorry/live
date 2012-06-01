@@ -39,7 +39,7 @@
 
 <title>Simon Corry &raquo; Lifestream &raquo; Science &amp; Creativity</title>
 <meta name="viewport" content="user-scalable=no">
-<meta name="app-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="Author" content="Simon Corry" />
 <meta name="description" content="Catch all the latest from Simon Corry through his interactive Lifestream."/>
 <meta name="keywords" content="simon corry, blog simon corry, science &amp; creativity, user experience design, user interaction design, information architecture, design &amp; developmentt"/>
