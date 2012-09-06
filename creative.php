@@ -3,6 +3,10 @@
 <!--[if IE 7]>   <html lang="en" class="ie7 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]--> 
 <!--[if IE 8]>   <html lang="en" class="ie8 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]--> 
 <!--[if IE 9]>   <html lang="en" class="ie9 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if LT IE 9]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
 <html lang="en">
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -42,6 +46,10 @@
 <meta name="Author" content="Simon Corry" />
 <meta name="description" content="I'm an information architect by day, gamer at night. Physics junkie and an 8-Bit nerd."/>
 <meta name="keywords" content="simon corry, about simon corry, science &amp; creativity, user experience design, user interaction design, information architecture, design &amp; development"/>
+<meta name="viewport" content="width=960px, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	 
 <?php /* FACEBOOK OG */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/fb-og.php"); ?>
 
