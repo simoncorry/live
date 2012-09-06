@@ -4,70 +4,64 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 <url>
   <loc>http://simoncorry.com/</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/lifestream.php</loc>
+  <loc>http://simoncorry.com/lifestream</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php</loc>
+  <loc>http://simoncorry.com/portfolio</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#Collaborative-Fund</loc>
+  <loc>http://simoncorry.com/portfolio#Collaborative-Fund</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#Acumen-Fund</loc>
+  <loc>http://simoncorry.com/portfolio#Acumen-Fund</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#Ford-Foundation</loc>
+  <loc>http://simoncorry.com/portfolio#Ford-Foundation</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#Lets-Swap</loc>
+  <loc>http://simoncorry.com/portfolio#Lets-Swap</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#Mercedes-House</loc>
+  <loc>http://simoncorry.com/portfolio#Mercedes-House</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#Mor-Together</loc>
+  <loc>http://simoncorry.com/portfolio#Mor-Together</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#Mor-Mobile</loc>
+  <loc>http://simoncorry.com/portfolio#Mor-Mobile</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#Mor-Studio</loc>
+  <loc>http://simoncorry.com/portfolio#Mor-Studio</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#Sanders-Shiers</loc>
+  <loc>http://simoncorry.com/portfolio#Sanders-Shiers</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#WeTransfer</loc>
+  <loc>http://simoncorry.com/portfolio#WeTransfer</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#Fortis-Intertrust</loc>
+  <loc>http://simoncorry.com/portfolio#Fortis-Intertrust</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#Oy</loc>
+  <loc>http://simoncorry.com/portfolio#Oy</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#New-York-Times</loc>
+  <loc>http://simoncorry.com/portfolio#New-York-Times</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#Cool-Earth</loc>
+  <loc>http://simoncorry.com/portfolio#Cool-Earth</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#Big-Chill-Festival</loc>
+  <loc>http://simoncorry.com/portfolio#Big-Chill-Festival</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/portfolio.php#Forty-Two</loc>
+  <loc>http://simoncorry.com/portfolio#Forty-Two</loc>
 </url>
 <url>
-  <loc>http://simoncorry.com/creative.php</loc>
+  <loc>http://simoncorry.com/creative</loc>
 </url>
-<url>
-  <loc>http://labs.simoncorry.com/</loc>
-</url>
-
 </urlset>
