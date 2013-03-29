@@ -3,6 +3,10 @@
 <!--[if IE 7]>   <html lang="en" class="ie7 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]--> 
 <!--[if IE 8]>   <html lang="en" class="ie8 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]--> 
 <!--[if IE 9]>   <html lang="en" class="ie9 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if LT IE 9]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
 <html lang="en">
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -38,10 +42,13 @@
 <!-- ////////////////////////////////////////////////// -->
 
 <title>Simon Corry &raquo; Lifestream &raquo; Science &amp; Creativity</title>
-<!-- FOR MOBILE VERSION SOON <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
 <meta name="Author" content="Simon Corry" />
 <meta name="description" content="Catch all the latest from Simon Corry through his interactive Lifestream."/>
 <meta name="keywords" content="simon corry, blog simon corry, science &amp; creativity, user experience design, user interaction design, information architecture, design &amp; developmentt"/>
+<meta name="viewport" content="width=960px, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	 
 <?php /* FACEBOOK OG */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/fb-og.php"); ?>
 

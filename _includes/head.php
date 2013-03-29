@@ -1,10 +1,10 @@
 <!-- /// BEGIN - ICON/RSS /// -->
 
-<link rel="icon" type="image/x-icon" href="http://simoncorry.com/_media/images/id/favicon.ico" />
-<link rel="shortcut icon" type="image/x-icon" href="http://simoncorry.com/_media/images/id/favicon.ico" />
-<link rel="apple-touch-icon" href="http://simoncorry.com/_media/images/apple-touch-icon.jpg"/>
-<link rel="apple-touch-icon" sizes="72x72" href="http://simoncorry.com/_media/images/id/apple-touch-icon-ipad.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="http://simoncorry.com/_media/images/id/apple-touch-icon-iphone4.png" />
+<link rel="icon" type="image/x-icon" href="/_media/images/id/favicon.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="/_media/images/id/favicon.ico" />
+<link rel="apple-touch-icon" href="/_media/images/id/apple-touch-icon.jpg"/>
+<link rel="apple-touch-icon" sizes="72x72" href="/_media/images/id/apple-touch-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/_media/images/id/apple-touch-icon-iphone4.png" />
 
 <!-- /// END - ICON/RSS /// -->
 
