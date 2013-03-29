@@ -86,8 +86,6 @@ nav {
     -o-transition:all 0.3s ease-in-out;
     transition:all 0.3s ease-in-out;
     -webkit-transform-style:preserve-3d; /* CHROME FLASH FIX */
-    -webkit-transform-style:preserve-3d; /* CHROME FLASH FIX */
-    -webkit-backface-visibility:hidden; /* FIX FOR JAGGED EDGES */
 }
 
 .nav-hidden {   
