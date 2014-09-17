@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+
+/* Loader Block */
+
+.loader_block {
+    z-index:2;
+    height:100%;
+    width:100%;
+    opacity:0;
+    visibility:hidden;
+    -webkit-transition:opacity    0.2s ease-in-out,
+                       visibility 0.2s ease-in-out;
+    	    transition:opacity    0.2s ease-in-out,
+    	               visibility 0.2s ease-in-out;
+}
+.loader_block.loading {
+    opacity:1;
+    visibility:visible;
+}
+
+.loader_block::before {
+    z-index:101;
+    position:absolute;
+    top:0; left:0;
+    background:rgba(234,236,238,0.9); /* Fallback */
+    background:-webkit-radial-gradient(center, ellipse cover, rgba(229,225,214,0.9) 0%,rgba(219,215,204,0.9) 100%);
+    background:-ms-radial-gradient(    center, ellipse cover, rgba(229,225,214,0.9) 0%,rgba(219,215,204,0.9) 100%);
+    background:radial-gradient(        ellipse at center,     rgba(229,225,214,0.9) 0%,rgba(219,215,204,0.9) 100%);
+    width:100%;
+    height:100%;
+    content:'';
+}
+
+.loader_block::after {
+    z-index:102;
+    position:absolute;
+    top:0; bottom:0; left:0; right:0;
+    background:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjQgNCA0MCA0MCI+PGcgaWQ9IkxheWVyXzEiPjwvZz48ZyBpZD0iTGF5ZXJfMiI+PGc+PHBhdGggb3BhY2l0eT0iMC4zIiBmaWxsPSIjODI5RkFGIiBkPSJNNDQsMjRjMC0xMS05LTIwLTIwLTIwQzEzLDQsNCwxMyw0LDI0YzAsMTEsOSwyMCwyMCwyMEMzNSw0NCw0NCwzNSw0NCwyNHogTTgsMjRjMC04LjgsNy4yLTE2LDE2LTE2czE2LDcuMiwxNiwxNnMtNy4yLDE2LTE2LDE2UzgsMzIuOCw4LDI0eiIvPjxwYXRoIGZpbGw9IiM4MjlGQUYiIGQ9Ik00NCwyNGMwLTExLTktMjAtMjAtMjB2NGM4LjgsMCwxNiw3LjIsMTYsMTZINDR6Ii8+PC9nPjwvZz48L3N2Zz4=') center center no-repeat;
+    background-size:contain;
+    height:28px;
+    width:28px;
+    margin:auto;
+    content:'';
+    opacity:1;
+    -webkit-transition:opacity 0.2s ease-in-out;
+    	    transition:opacity 0.2s ease-in-out;
+}
+.loader_block.remove_spinner::after {opacity:0;}
+
+.loader_block::after {
+    -webkit-animation:loader_block_spinning linear 0.5s infinite;
+            animation:loader_block_spinning linear 0.5s infinite;
+}
+
+@-webkit-keyframes loader_block_spinning {
+    0%   {-webkit-transform:rotate3d(0,0,1,1deg);}
+    50%  {-webkit-transform:rotate3d(0,0,1,180deg);}
+    100% {-webkit-transform:rotate3d(0,0,1,360deg);}
+}
+
+@keyframes loader_block_spinning {
+    0%   {transform:rotate3d(0,0,1,1deg);}
+    50%  {transform:rotate3d(0,0,1,180deg);}
+    100% {transform:rotate3d(0,0,1,360deg);}
+}
+
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media only screen 
+and (max-width : 415px) {.loader_block::after {width:22px; height:22px;}}

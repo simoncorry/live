@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* /// HI /// */
+
+body {
+    background:#ccc8bd url('/_media/images/bg/bg.jpg') repeat;
+    font-family:Courier New, monospace;
+	font-weight:400;
+	line-height:normal;
+	color:#5a5c60;
+	text-shadow:-1px 0px rgba(232,249,223,0.2);
+}
+
+body::after {
+    z-index:1;
+    position:fixed;
+    top:0;
+    left:0;
+    background:-webkit-radial-gradient(center,ellipse cover,rgba(158,154,146,0) 40%,rgba(158,154,146,0.6) 100%);
+    background:radial-gradient(ellipse at center,           rgba(158,154,146,0) 40%,rgba(158,154,146,0.6) 100%);
+    width:100%;
+    height:100%;
+    content:'';
+    pointer-events:none;
+}
+
+::-moz-selection{background:#8AB29F; color:#F2EFDF; text-shadow:none;}
+::selection {background:#8AB29F; color:#F2EFDF; text-shadow:none;}
+a:link {-webkit-tap-highlight-color:#8AB29F;}
+
+section {
+    position:absolute;
+    top:0; bottom:0; left:0; right:0;
+    width:280px;
+    height:106px;
+    margin:auto;
+    pointer-events:none;
+}
+
+section a {
+    color:#5a5c60;
+    text-decoration:none;
+    pointer-events:all;
+    -webkit-transition:color 0.2s ease-in-out;
+    	    transition:color 0.2s ease-in-out;
+}
+
+section a:hover {color:#8c3b3b;}
+
+footer {
+    position:absolute;
+    left:50%;
+    bottom:0;
+    width:720px;
+    height:145px;
+    margin-left:-360px;
+}
+
+footer div.sprite {
+    background:url('/_media/images/home/orange-animation-v1.1.gif') center 32px no-repeat;
+    background-size:70% !important;
+    width:100%;
+    height:100%;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+
+/* Height */
+
+@media only screen 
+and (max-height : 400px) {
+    section {
+        position:relative;
+        padding:40px 0;
+        margin:0 auto;
+    }
+    footer {display:none;}
+}
+
+@media only screen 
+and (max-height : 519px) {
+    footer {display:none;}
+}
+
+/* Width */
+
+@media only screen 
+and (max-width : 719px) {
+    footer {display:none;}
+}

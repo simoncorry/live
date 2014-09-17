@@ -1,0 +1,320 @@
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ********** BEGIN - GLOBALS ************************************************************************* */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////// */
+
+/* ********** BEGIN - TAG *************************** */
+
+/* ////////////////////////////////////////////////// */
+
+/*
+ 
+     =====================
+     .....................
+     ... .................
+     .. + ................
+     ... ...... ..........
+     ......... ^ .........
+     .......... ..........
+     ......... ^ .........          
+     ........ ^^^ ........
+     ....... ^^^^^ .......
+     ...... ^^^^^^^ ......
+     ..... ^^^^^^^^^ .....     
+     =====================
+     SIMON CORRY BA(HONS.)
+     SCIENCE 'N CREATIVITY
+     =====================
+          
+     http://simoncorry.com
+               
+*/
+
+/* ////////////////////////////////////////////////// */
+
+/* ********** END - TAG ***************************** */
+
+/* ////////////////////////////////////////////////// */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ********** END - GLOBALS *************************************************************************** */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ********** BEGIN - PORTFOLIO *********************************************************************** */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////// */
+
+/* ********** BEGIN - PORTFOLIO ********************* */
+
+/* ////////////////////////////////////////////////// */
+
+.project-wrapper {
+    width:100%;
+    height:auto;
+    -webkit-transform-style:preserve-3d; /* CHROME FLASH FIX */
+    -webkit-backface-visibility:hidden; /* FIX FOR JAGGED EDGES */
+    backface-visibility:hidden; /* FIX FOR JAGGED EDGES */   
+}
+
+.project-content {
+    background:transparent;
+    width:auto;
+    height:auto;
+}
+
+.project-box-wrapper {
+    width:auto;
+    height:auto;
+}
+
+.project-box-content {
+    background:transparent;
+    width:auto;
+    height:auto;
+}
+
+.project-box-photo {
+    background:#EAE6D8;   
+    width:880px;
+    height:580px;
+    padding:5px;
+    border:5px solid #F2EFDF;
+    margin:0 auto;
+    -webkit-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -khtml-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -moz-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -o-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+}
+
+.project-box-photo img {
+    border-radius:5px;
+    -webkit-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.5);
+    -khtml-box-shadow:0px 0px 1px 1px rgba(180, 180, 180, 0.5);
+    -moz-box-shadow:0px 0px 1px 1px rgba(180, 180, 180, 0.5);
+    -o-box-shadow:0px 0px 1px 1px rgba(180, 180, 180, 0.5);
+    box-shadow:0px 0px 1px 1px rgba(180, 180, 180, 0.5);
+}
+
+.project-box-copy {
+    background:transparent; 
+    width:900px;
+    height:42px;
+    margin:10px auto 0px;
+    overflow:hidden;
+}
+
+.project-box-copy h2 {    
+    font:16px/44px 'AllerDisplay', Arial, Helvetica, sans-serif;
+    color:#81848d;
+    text-align:left;
+    text-transform:uppercase;
+    text-overflow:clip;
+    text-shadow:1px 1px 0px #E2DFCF;
+    filter:dropshadow(color=#E2DFCF, offx=1, offy=1);
+}
+
+.project-box-copy p {    
+    width:900px;
+    font:13px/31px 'AllerDisplay', Arial, Helvetica, sans-serif;
+    color:#81848d;
+    text-align:left;
+    text-transform:uppercase;
+    text-overflow:ellipsis;
+    text-shadow:1px 1px 0px #e8e5d5;
+    filter:dropshadow(color=#e8e5d5, offx=1, offy=1);
+}
+
+.project-box-copy a {
+    color:#A06A7B;
+    text-decoration:none;
+    -webkit-transition:all 0.4s linear;
+    -moz-transition:all 0.4s linear;
+    -o-transition:all 0.4s linear;
+    transition:all 0.4s linear;  
+}
+
+.project-box-copy a:hover {color:#AD5C6E;}
+
+.project-box-copy .visit {
+    color:#81848d;
+    text-shadow:none;
+    text-shadow:1px 1px 0px #E2DFCF;
+    filter:dropshadow(color=#E2DFCF, offx=1, offy=1);
+    margin:0px 5px 0px 0px
+}
+
+.project-box-copy-info {
+    float:left;
+    position:relative;
+    background:#EAE6D8 url(/_media/images/portfolio/info-btn.png) 0px -30px no-repeat; 
+    width:30px;
+    height:30px;
+    text-indent:50px;
+    border:5px solid #F2EFDF;
+    margin-bottom:10px;
+    overflow:hidden;
+    -webkit-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -khtml-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -moz-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -o-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -webkit-transition:all 0.4s ease-in-out;
+    -khtml-transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -o-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+}
+
+.project-box-copy-info:hover {
+    background:#EAE6D8 url(/_media/images/portfolio/info-btn.png) 0px 0px no-repeat; 
+    width:890px;
+}
+
+.project-box-copy-client {
+    float:left;
+    position:relative;
+    background:#EAE6D8 url(/_media/images/portfolio/client-btn.png) 0px -30px no-repeat; 
+    width:30px;
+    height:30px;
+    text-indent:50px;
+    border:5px solid #F2EFDF;
+    margin:0px 0px 10px 10px;
+    overflow:hidden;
+    -webkit-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -khtml-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -moz-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -o-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -webkit-transition:all 0.4s ease-in-out;
+    -khtml-transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -o-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+}
+
+.project-box-copy-client:hover {
+    background:#EAE6D8 url(/_media/images/portfolio/client-btn.png) 0px 0px no-repeat; 
+    width:840px;
+}
+
+.project-box-copy-credits {
+    float:left;
+    position:relative;
+    background:#EAE6D8 url(/_media/images/portfolio/credits-btn.png) 0px -30px no-repeat; 
+    width:30px;
+    height:30px;
+    text-indent:50px;
+    border:5px solid #F2EFDF;
+    margin:0px 0px 10px 10px;
+    overflow:hidden;
+    -webkit-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -khtml-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -moz-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -o-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -webkit-transition:all 0.4s ease-in-out;
+    -khtml-transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -o-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+}
+
+.project-box-copy-credits:hover {
+    background:#EAE6D8 url(/_media/images/portfolio/credits-btn.png) 0px 0px no-repeat; 
+    width:790px;
+}
+
+.project-box-copy-plus {
+    float:left;
+    position:relative;
+    background:#EAE6D8 url(/_media/images/portfolio/plus-btn.png) 0px -30px no-repeat; 
+    width:30px;
+    height:30px;
+    text-indent:50px;
+    border:5px solid #F2EFDF;
+    margin:0px 0px 10px 10px;
+    overflow:hidden;
+    -webkit-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -khtml-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -moz-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -o-box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    box-shadow:2px 2px 0px rgba(180, 180, 180, 0.6);
+    -webkit-transition:all 0.4s ease-in-out;
+    -khtml-transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -o-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+}
+
+.project-box-copy-plus:hover {
+    background:#EAE6D8 url(/_media/images/portfolio/plus-btn.png) 0px 0px no-repeat; 
+    width:740px;
+}
+
+.project-box-copy-plus .share-text {
+    float:left;
+    margin:0px 0px 0px 0px;
+    font:13px/31px 'AllerDisplay', Arial, Helvetica, sans-serif;
+    color:#81848d;
+    text-align:left;
+    text-transform:uppercase;
+    text-shadow:1px 1px 0px #e8e5d5;
+    filter:dropshadow(color=#e8e5d5, offx=1, offy=1);
+}
+
+.project-box-copy-plus .fb-btn {
+    float:left;
+    margin:5px 0px 0px -82px;
+}
+
+.fb_edge_widget_with_comment span.fb_edge_comment_widget iframe.fb_ltr {
+    display: none !important;
+}
+
+.project-box-copy-plus .gp-btn {
+    float:left;
+    margin:5px 0px 0px -67px;
+}
+
+.project-box-copy-plus .tw-btn {
+    float:left;
+    margin:5px 0px 0px -48px;
+}
+
+.project-box-copy-header {
+    float:right;
+    width:auto;
+    height:40px;
+    padding-right:10px;
+}
+
+.project-box-spacer {
+    position:absolute;
+    left:30px;
+    top:0px;
+    background:transparent url(/_media/images/portfolio/spacer.png) no-repeat;
+    width:5px;
+    height:30px;
+}
+
+/* ////////////////////////////////////////////////// */
+
+/* ********** END - PORTFOLIO *********************** */
+
+/* ////////////////////////////////////////////////// */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ********** END - PORTFOLIO ************************************************************************* */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */

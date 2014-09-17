@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+/* Ajax Page */
+
+.ajax_page {
+    opacity:1;
+    -webkit-transition:opacity 0.6s ease-in-out;
+    	    transition:opacity 0.6s ease-in-out;
+}
+.remove {opacity:0;}
+
+/* Ajax Loader */
+
+.ajax_loader {
+    z-index:999999;
+    position:fixed;
+    left:40px; bottom:40px;
+    width:36px;
+    height:36px;
+    opacity:0;
+    pointer-events:none;
+	-webkit-transform:scale3d(0.9,0.9,1);
+	        transform:scale3d(0.9,0.9,1);
+    -webkit-transition:-webkit-transform 0.25s ease-in-out,
+    				   opacity           0.25s ease-in-out; 
+    		transition:transform         0.25s ease-in-out,
+    				   opacity           0.25s ease-in-out;
+}
+
+.ajax_loader.active {
+    opacity:1;
+	-webkit-transform:scale3d(1,1,1);
+	        transform:scale3d(1,1,1);
+}
+
+.ajax_content {
+    position:absolute;
+    top:0; bottom:0; left:0; right:0;
+    background:rgb(242,239,223);
+    width:36px;
+    height:36px;
+    margin:auto;
+    box-shadow:1px 1px 0 rgb(135,140,149);
+    -webkit-transition:all 1s ease-in-out; 
+            transition:all 1s ease-in-out;
+}
+
+.ajax_content .square_1,
+.ajax_content .square_2,
+.ajax_content .square_3,
+.ajax_content .square_4 {
+    position:absolute;
+    width:16px;
+    height:16px;
+    -webkit-animation:0.8s ease-in-out infinite;
+    		animation:0.8s ease-in-out infinite;
+}
+
+.ajax_content .square_1 {
+    top:2px;
+    left:2px;
+    background:rgb(40,55,64);
+    -webkit-animation-name:ajax_sq_1;
+            animation-name:ajax_sq_1;
+}
+
+@-webkit-keyframes ajax_sq_1 {
+    from {opacity:1.0;}
+    25%  {opacity:1.0;}
+    26%  {opacity:0.2;}
+    to   {opacity:0.2;}
+}
+
+@keyframes ajax_sq_1 {
+    from {opacity:1.0;}
+    25%  {opacity:1.0;}
+    26%  {opacity:0.2;}
+    to   {opacity:0.2;}
+}
+
+.ajax_content .square_2 {
+    top:2px;
+    right:2px;
+    background:rgb(138,178,159);
+    -webkit-animation-name:ajax_sq_2;
+    animation-name:        ajax_sq_2;
+}
+
+@-webkit-keyframes ajax_sq_2 {
+    from {opacity:0.2;}
+    25%  {opacity:0.2;}
+    26%  {opacity:1.0;}
+    50%  {opacity:1.0;}
+    51%  {opacity:0.2;}
+    to   {opacity:0.2;}
+}
+
+@keyframes ajax_sq_2 {
+    from {opacity:0.2;}
+    25%  {opacity:0.2;}
+    26%  {opacity:1.0;}
+    50%  {opacity:1.0;}
+    51%  {opacity:0.2;}
+    to   {opacity:0.2;}
+}
+
+.ajax_content .square_3 {
+    bottom:2px;
+    left:2px;
+    background:rgb(191,168,118);
+    -webkit-animation-name:ajax_sq_3;
+            animation-name:ajax_sq_3;
+}
+
+@-webkit-keyframes ajax_sq_3 {
+    from {opacity:0.2;}
+    25%  {opacity:0.2;}
+    75%  {opacity:0.2;}
+    76%  {opacity:1.0;}
+    to   {opacity:1.0;}
+}
+
+@keyframes ajax_sq_3 {
+    from {opacity:0.2;}
+    25%  {opacity:0.2;}
+    75%  {opacity:0.2;}
+    76%  {opacity:1.0;}
+    to   {opacity:1.0;}
+}
+
+.ajax_content .square_4 {
+    bottom:2px;
+    right:2px;
+    background:rgb(89,51,37);
+    -webkit-animation-name:ajax_sq_4;
+            animation-name:ajax_sq_4;
+}
+
+@-webkit-keyframes ajax_sq_4 {
+    from {opacity:0.2;}
+    50%  {opacity:0.2;}
+    51%  {opacity:1.0;}
+    75%  {opacity:1.0;}
+    76%  {opacity:0.2;}
+    to   {opacity:0.2;}
+}
+
+@keyframes ajax_sq_4 {
+    from {opacity:0.2;}
+    50%  {opacity:0.2;}
+    51%  {opacity:1.0;}
+    75%  {opacity:1.0;}
+    76%  {opacity:0.2;}
+    to   {opacity:0.2;}
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media only screen 
+and (max-width : 747px) {
+    .ajax_loader {
+        left:20px; bottom:20px;
+    	-webkit-transform:scale3d(1,1,1);
+    	        transform:scale3d(1,1,1);
+    }
+    .ajax_content {
+        top:auto; right:auto;
+        width:30px;
+        height:30px;
+        margin:0;
+    }
+    .ajax_content .square_1,
+    .ajax_content .square_2,
+    .ajax_content .square_3,
+    .ajax_content .square_4 {
+        width:13px;
+        height:13px;
+    }
+}

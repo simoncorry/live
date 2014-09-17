@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+/* Animations */
+
+.animations {
+    z-index:1;
+    position:fixed;
+    top:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    pointer-events:all;
+    -webkit-transition:opacity 0.6s 2s ease-in-out;
+            transition:opacity 0.6s 2s ease-in-out;
+}
+
+.animations.active {opacity:1;}
+
+
+/* RESPONSIVE ADJUSTMENTS */
+
+@media only screen 
+and (max-width : 747px) {
+
+	.animations {display:none;}
+    
+}

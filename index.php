@@ -1,279 +1,365 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html lang="en" class="ie6 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]--> 
-<!--[if IE 7]>   <html lang="en" class="ie7 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]--> 
-<!--[if IE 8]>   <html lang="en" class="ie8 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]--> 
-<!--[if IE 9]>   <html lang="en" class="ie9 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
-<!--[if LT IE 9]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-<![endif]-->
-<html lang="en">
+<!--[if IE 9]><html lang="en" class="ie9 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<html lang="en" class="no-js">
+    <head prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/WebPage">
+        <title>Simon Corry</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Welcome to the new home of science &amp; creativity. A place to see some of my latest experiments.">
+        <meta name="keywords" content="simon corry, science &amp; creativity, user experience design, information architecture, design &amp; development">
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <!-- Open Graph Data -->
+        <meta property="og:locale" content="en_US">
+        <meta property="og:title" content="Simon Corry">
+        <meta property="og:type" content="profile">
+        <meta property="og:image" content="http://simoncorry.com/assets/images/lib/icons/facebook-google.png">
+        <meta property="og:url" content="http://simoncorry.com/">
+        <meta property="og:site_name" content="Simon Corry">
+        <meta property="og:description" content="Welcome to the new home of science &amp; creativity. A place to see some of my latest experiments.">
+        <meta property="fb:admins" content="512859885"/>
+        <!-- Twitter Card Data --> 
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@simoncorry">
+        <meta name="twitter:title" content="Checkout Awesome Pixels!"> 
+        <meta name="twitter:description" content="Welcome to the new home of science &amp; creativity. A place to see some of my latest experiments."> 
+        <meta name="twitter:creator" content="@simoncorry">
+        <meta name="twitter:domain" content="http://simoncorry.com">
+        <meta name="twitter:image" content="http://simoncorry.com/assets/images/lib/icons/facebook-google.png">
+        <!-- Schema Markup --> 
+        <meta itemprop="name" content="Simon Corry"> 
+        <meta itemprop="description" content="Welcome to the new home of science &amp; creativity. A place to see some of my latest experiments."> 
+        <meta itemprop="image" content="http://simoncorry.com/assets/images/lib/icons/facebook-google.png">
+        <!-- Google Markup --> 
+        <link rel="author" href=" https://plus.google.com/+SimonCorry"/>
+        <link rel="publisher" href="https://plus.google.com/+SimonCorry"/>
+        <!-- Icons -->
+        <link rel="icon" type="image/x-icon" href="/assets/images/lib/icons/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/images/lib/icons/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="/assets/images/lib/icons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/lib/icons/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/lib/icons/apple-touch-icon-76x76-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/lib/icons/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/lib/icons/apple-touch-icon-120x120-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/lib/icons/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/lib/icons/apple-touch-icon-152x152-precomposed.png">
+        <!-- Typefaces -->
+        <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inconsolata:700,400">
+        <link id="myfonts-css"rel="stylesheet" href="/assets/css/lib/MyFontsWebfontsKit.css?ver=1.0" media="all">
+        <!-- CSS -->
+        <link type="text/css" rel="stylesheet" href="/assets/css/lib/reset.min.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/lib/jquery.preloader-1.2.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/styles/main.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/styles/typography.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/loaders/loader_ajax.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/loaders/loader_block.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/tooltips/tooltips.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/structure/header.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/structure/sections.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/structure/articles.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/structure/nav.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/forms/inputs.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/forms/buttons.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_clouds.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_ships.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_cannons.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_people.css">
+        <!-- JS -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+        <script src="/assets/js/lib/modernizr.js"></script>
+        <script src="/assets/js/lib/google-analytics.js"></script>
+        <script src="/assets/js/lib/jquery.preloader-1.2.js"></script>
+        <script src="/assets/js/lib/waypoints.min.js"></script>
+        <script src="/assets/js/lib/jquery.autosize.min.js"></script>
+        <script src="/assets/js/app/main.js"></script>
+        <script src="/assets/js/app/plugins.js"></script>
+        <script src="/assets/js/app/disable_scroll.js"></script>
+        <script src="/assets/js/app/mobile_check.js"></script>
+        <script src="/assets/js/app/animations.js"></script>
+        <script src="/assets/js/app/ajax.js"></script>
+    </head>
+    <body id="preloader">
 
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-<!-- ********** BEGIN - HEAD **************************************************************************** -->
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-<head>
-<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
-<meta charset="utf-8" />
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** BEGIN - GLOBALS *********************** -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<?php /* ERROR */ ini_set('error_reporting', E_ALL); ini_set('display_errors', 0); ?>
-<?php /* TAG */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/tag.php"); ?>
-<?php /* PAGE */ $thisPage="Home"; ?>
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** END - GLOBALS ************************* -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** BEGIN - META/LINKS ******************** -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<title>Simon Corry &raquo; Home &raquo; Science &amp; Creativity</title>
-<meta name="Author" content="Simon Corry" />
-<meta name="description" content="Welcome one and all to the new home of science and creativity."/>
-<meta name="keywords" content="simon corry, science &amp; creativity, user experience design, information architecture, design &amp; development"/>
-<meta name="viewport" content="width=960px, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta http-equiv="X-UA-Compatible" content="chrome=1">
-	 
-<?php /* FACEBOOK OG */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/fb-og.php"); ?>
-
-<?php /* LINKS */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/head.php"); ?>
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** END - META/LINKS ********************** -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** BEGIN - FUNCTIONS ********************* -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- /// BEGIN - PRELOAD  /// -->
-
-<script type="text/javascript">
-$(document).ready(function() {	
-    $('#loading-wrapper').show();
-    $('nav').hide();
-    $('#wrapper').hide();
-    $('footer').hide(); 
-	onload = function() {		
-        $('#loading-wrapper').hide();
-        $('nav').fadeIn(600);
-        $('#wrapper').fadeIn(600);
-        $('footer').fadeIn(600);
-    }
-});
-</script>
-
-<!-- /// END - PRELOAD  /// -->
-
-<!-- /// BEGIN - FIXED FOOTER /// -->
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $("footer").pinFooter();
-});
-$(window).resize(function() {
-    $("footer").pinFooter();
-});
-</script>
-
-<!-- /// END - FIXED FOOTER /// -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** END - FUNCTIONS *********************** -->
-
-<!-- ////////////////////////////////////////////////// --> 
-
-</head>
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-<!-- ********** END - HEAD ****************************************************************************** -->
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-<!-- ********** BEGIN - BODY **************************************************************************** -->
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-<body>
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** BEGIN - PRELOADER ********************* -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<div id="loading-wrapper">
-    <div id="loading">&nbsp;</div>
-</div>
-<div id="preload"></div>
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** END - PRELOADER *********************** -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** BEGIN - NAV *************************** -->
-
-<!-- //////////////////////////////////////////////////// -->
-        
-<?php /* NAV */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/nav.php"); ?>      
-        
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** END - NAV ***************************** -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** BEGIN - WRAPPER *********************** -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<div id="wrapper" style="background:transparent;">
-    <div id="content"></div>
-</div>
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** END - WRAPPER ************************* -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** BEGIN - FOOTER ************************ -->
-
-<!-- ////////////////////////////////////////////////// -->   
-         
-<?php /* FOOTER */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/footer.php"); ?>
+        <!-- Header -->
+        <header id="header" class="clearfix">
             
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** END - FOOTER ************************** -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** BEGIN - FUNCTIONS ********************* -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- /// BEGIN - GOOGLE /// -->
-
-<!-- ANALYTICS -->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-24800976-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
-<!-- PLUS -->
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-
-<!-- /// END - GOOGLE /// -->
-
-<!-- /// BEGIN - FACEBOOK /// -->
-
-<script type="text/javascript">
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=144137692323731";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-
-<!-- /// END - FACEBOOK /// -->
-
-<!-- /// BEGIN - TWITTER /// -->
-
-<script type="text/javascript">
-  !function(d,s,id){
-    var js,fjs=d.getElementsByTagName(s)[0];
-    if(!d.getElementById(id)){
-      js=d.createElement(s);
-      js.id=id;js.src="//platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js,fjs);
-     }
-   }(document,"script","twitter-wjs");
-</script>
-
-<!-- /// END - TWITTER /// -->
-
-<!-- /// BEGIN - CHARTBEAT /// -->
-
-<script type="text/javascript">
-var _sf_async_config={uid:33072,domain:"simoncorry.com"};
-(function(){
-  function loadChartbeat() {
-    window._sf_endpt=(new Date()).getTime();
-    var e = document.createElement('script');
-    e.setAttribute('language', 'javascript');
-    e.setAttribute('type', 'text/javascript');
-    e.setAttribute('src',
-       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
-       "js/chartbeat.js");
-    document.body.appendChild(e);
-  }
-  loadChartbeat();
-})();
-</script>
-
-<!-- /// END - CHARTBEAT /// -->
-
-<!-- ////////////////////////////////////////////////// -->
-
-<!-- ********** END - FUNCTIONS *********************** -->
-
-<!-- ////////////////////////////////////////////////// -->    
-
-</body>
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-<!-- ********** END - BODY ****************************************************************************** -->
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
+            <!-- Logo -->
+            <div class="col lcol">
+                <nav class="activate_nav">
+                    <ul class="nav secondary clearfix">
+                        <li class="mobile_hide">
+                            <a class="ajax_load logo logo_secondary" href="/content/home.php">
+                                <? $a = array(9,8,6,8,9,8,9,8,9,8,6,8,9,8,6,8,9,8,9,8,9,8,6,8,9);
+                                    for( $i = 0; $i < count($a); $i++ ) : ?>
+                                    <div class="logo_pixel hover_times p<?=$a[$i]?>"></div>
+                                <? endfor; ?>
+                                <div class="moon"></div>
+                                <div class="ship"></div>
+                                <div class="exhaust"></div>
+                                <div class="active_animation"></div>
+                            </a>
+                        </li>
+                        <li class="stream mobile_hide">
+                            <a href="/content/stream.php" class="ajax_load clearfix">
+                                <? for( $i = 0; $i < 25; $i++ ) : ?>
+                                    <div class="pixel"></div>
+                                <? endfor; ?>
+                                <div class="bg_image"></div>
+                                <div class="active_animation"></div>
+                            </a>
+                        </li>
+                        <li class="projects mobile_hide">
+                            <a href="/content/portfolio.php" class="ajax_load clearfix">
+                                <? for( $i = 0; $i < 25; $i++ ) : ?>
+                                    <div class="pixel"></div>
+                                <? endfor; ?>
+                                <div class="bg_image"></div>
+                                <div class="active_animation"></div>
+                            </a>
+                        </li>
+                        <li class="contact mobile_hide">
+                            <a href="/content/contact.php" class="ajax_load clearfix">
+                                <? for( $i = 0; $i < 25; $i++ ) : ?>
+                                    <div class="pixel"></div>
+                                <? endfor; ?>
+                                <div class="bg_image"></div>
+                                <div class="active_animation"></div>
+                            </a>
+                        </li>
+                        <li class="labs mobile_hide">
+                            <a href="/content/labs.php" class="ajax_load clearfix">
+                                <? for( $i = 0; $i < 25; $i++ ) : ?>
+                                    <div class="pixel"></div>
+                                <? endfor; ?>
+                                <div class="bg_image"></div>
+                                <div class="active_animation"></div>
+                            </a>
+                        </li>
+                        <li class="btn_mobile mobile_show">
+                            <a class="logo logo_secondary" href="#main">
+                                <? $a = array(9,8,6,8,9,8,9,8,9,8,6,8,9,8,6,8,9,8,9,8,9,8,6,8,9);
+                                    for( $i = 0; $i < count($a); $i++ ) : ?>
+                                    <div class="logo_pixel hover_times p<?=$a[$i]?>"></div>
+                                <? endfor; ?>
+                                <div class="moon"></div>
+                                <div class="ship"></div>
+                                <div class="exhaust"></div>
+                                <div class="active_animation"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- Icons -->
+            <div class="col rcol">
+                <ul class="nav_network touch_links clearfix">
+                    <li><a href="http://twitter.com/simoncorry"     target="_blank" data-tooltip="Twitter"  class="touch_link tooltip tooltip_header twitter">Read Tweets by Simon Corry</a></li>
+                    <li><a href="http://dribbble.com/simoncorry"    target="_blank" data-tooltip="Dribbble" class="touch_link tooltip tooltip_header dribbble">View project shots by Simon Corry</a></li>      
+                    <li><a href="http://github.com/simoncorry"      target="_blank" data-tooltip="Github"   class="touch_link tooltip tooltip_header github">See code examples by Simon Corry</a></li>
+                    <li><a href="http://linkedin.com/in/simoncorry" target="_blank" data-tooltip="Linkedin" class="touch_link tooltip tooltip_header linkedin">Connect with Simon Corry</a></li>
+                </ul>
+            </div>
+            
+        </header>
+        
+        
+        <!-- Content -->
+        <section id="main" class="section">
+            <div id="centered_content" class="section_wrapper">
+                
+                <!-- Bio Block -->
+                <div id="bio">
+                    
+                    <div class="article_wrapper">
+                        <article class="article">
+                            <header id="bio_header">
+                                <h1>Science &amp; Creativity</h1>
+                                <hr class="hr">
+                                <h2>I'm a creative director by day, gamer at night. Physics junkie and an 8-bit nerd.</h2>
+                            </header>
+                            <a id="logo_article" class="ajax_load logo" href="/content/home.php">
+                                <? $a = array(9,8,6,8,9,8,9,8,9,8,6,8,9,8,6,8,9,8,9,8,9,8,6,8,9);
+                                    for( $i = 0; $i < count($a); $i++ ) : ?>
+                                    <div class="logo_pixel hover_times p<?=$a[$i]?>"></div>
+                                <? endfor; ?>
+                                <div class="moon"></div>
+                                <div class="ship"></div>
+                                <div class="exhaust"></div>
+                                <div class="active_animation"></div>
+                            </a>
+                            <div id="bio_pixel" class="clearfix">
+                                <? for( $i = 0; $i < 882; $i++ ) : ?>
+                                    <div class="pixel"></div>
+                                <? endfor; ?>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <nav>
+                        <ul class="nav clearfix">
+                            <li class="stream tooltip tooltip_nav" data-tooltip="Stream">
+                                <a href="/content/stream.php" class="ajax_load clearfix">
+                                    <? for( $i = 0; $i < 100; $i++ ) : ?>
+                                        <div class="pixel"></div>
+                                    <? endfor; ?>
+                                    <div class="bg_image"></div>
+                                    <div class="active_animation"></div>
+                                </a>
+                            </li>
+                            <li class="projects tooltip tooltip_nav" data-tooltip="Portfolio">
+                                <a href="/content/portfolio.php" class="ajax_load clearfix">
+                                    <? for( $i = 0; $i < 100; $i++ ) : ?>
+                                        <div class="pixel"></div>
+                                    <? endfor; ?>
+                                    <div class="bg_image"></div>
+                                    <div class="active_animation"></div>
+                                </a>
+                            </li>
+                            <li class="contact tooltip tooltip_nav" data-tooltip="Contact">
+                                <a href="/content/contact.php" class="ajax_load clearfix">
+                                    <? for( $i = 0; $i < 100; $i++ ) : ?>
+                                        <div class="pixel"></div>
+                                    <? endfor; ?>
+                                    <div class="bg_image"></div>
+                                    <div class="active_animation"></div>
+                                </a>
+                            </li>
+                            <li class="labs tooltip tooltip_nav" data-tooltip="Labs">
+                                <a href="/content/labs.php" class="ajax_load clearfix">
+                                    <? for( $i = 0; $i < 100; $i++ ) : ?>
+                                        <div class="pixel"></div>
+                                    <? endfor; ?>
+                                    <div class="bg_image"></div>
+                                    <div class="active_animation"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+                
+                <!-- Ajax Content -->
+                <div id="content" class="ajax_page">
+                    <?php /* Home */ 
+                        switch( $_SERVER['SCRIPT_URL'] ) {
+                            case '/stream' : 
+                                $template = 'stream.php';
+                                break;
+                            case '/portfolio' : 
+                                $template = 'portfolio.php';
+                                break;
+                            case '/labs' : 
+                                $template = 'labs.php';
+                                break;
+                            case '/contact' : 
+                                $template = 'contact.php';
+                                break;
+                            default :
+                                $template = 'home.php';
+                        }
+                        include_once($_SERVER['DOCUMENT_ROOT']."/content/" . $template); 
+                    ?>
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- Ajax Loader -->
+        <div class="ajax_loader">
+            <div class="ajax_content">
+                <div class="square_1"></div>
+                <div class="square_2"></div>
+                <div class="square_3"></div>
+                <div class="square_4"></div>
+            </div>
+        </div>
+        
+        <!-- Animations -->
+        <section class="animations">
+        	
+        		<!-- List cloud types -->
+	        	<div class="cloud_types_large">
+		        	<div class="cloud_type_large cloud_type_large_1"></div>
+		        	<div class="cloud_type_large cloud_type_large_2"></div>
+		        	<div class="cloud_type_large cloud_type_large_3"></div>
+		        	<div class="cloud_type_large cloud_type_large_4"></div>
+		        	<div class="cloud_type_large cloud_type_large_5"></div>
+		        	<div class="cloud_type_large cloud_type_large_6"></div>
+	        	</div>
+	        	<div class="cloud_types_medium">
+		        	<div class="cloud_type_medium cloud_type_medium_1"></div>
+		        	<div class="cloud_type_medium cloud_type_medium_2"></div>
+		        	<div class="cloud_type_medium cloud_type_medium_3"></div>
+		        	<div class="cloud_type_medium cloud_type_medium_4"></div>
+		        	<div class="cloud_type_medium cloud_type_medium_5"></div>
+		        	<div class="cloud_type_medium cloud_type_medium_6"></div>
+	        	</div>
+	        	<div class="cloud_types_small">
+		        	<div class="cloud_type_small cloud_type_small_1"></div>
+		        	<div class="cloud_type_small cloud_type_small_2"></div>
+		        	<div class="cloud_type_small cloud_type_small_3"></div>
+	        	</div>
+	        	
+	        	<!-- Display cloud types -->
+	        	<div class="clouds_large">
+	        		<div class="cloud_wrapper">
+			        	<div id="cloud_large_1" class="cloud_large cloud_large_1"></div>
+	        		</div>
+	        		<div class="cloud_wrapper">
+			        	<div id="cloud_large_2" class="cloud_large cloud_large_2"></div>
+	        		</div>
+	        		<div class="cloud_wrapper">
+			        	<div id="cloud_large_3" class="cloud_large cloud_large_3"></div>
+	        		</div>
+	        		<div class="cloud_wrapper">
+			        	<div id="cloud_large_4" class="cloud_large cloud_large_4"></div>
+	        		</div>
+	        	</div>
+	        	<div class="clouds_medium">
+	        		<div class="cloud_wrapper">
+			        	<div id="cloud_medium_1" class="cloud_medium cloud_medium_1"></div>
+	        		</div>
+	        		<div class="cloud_wrapper">
+			        	<div id="cloud_medium_2" class="cloud_medium cloud_medium_2"></div>
+	        		</div>
+	        		<div class="cloud_wrapper">
+			        	<div id="cloud_medium_3" class="cloud_medium cloud_medium_3"></div>
+	        		</div>
+	        		<div class="cloud_wrapper">
+			        	<div id="cloud_medium_4" class="cloud_medium cloud_medium_4"></div>
+	        		</div>
+	        		<div class="cloud_wrapper">
+			        	<div id="cloud_medium_5" class="cloud_medium cloud_medium_5"></div>
+	        		</div>
+	        	</div>
+	        	<div class="clouds_small">
+	        		<div class="cloud_wrapper">
+			        	<div id="cloud_small_1" class="cloud_small cloud_small_1"></div>
+	        		</div>
+	        		<div class="cloud_wrapper">
+			        	<div id="cloud_small_2" class="cloud_small cloud_small_2"></div>
+	        		</div>
+	        	</div>
+	        	
+	        	<!-- Display Ships -->
+	        	<div class="ships_loop_right"></div>
+	        	
+                <!-- Display Drones -->
+	        	<div class="drone_1 cargo_drone_1_wrapper">
+		        	<div class="cargo_drone_1">
+		        		<div class="prop_1"></div>
+		        		<div class="cargo_1"></div>
+		        	</div>
+	        	</div>
+	        	
+        </section>
+        
+        
+    </body>
 </html>

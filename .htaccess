@@ -1,113 +1,182 @@
+# ----------------------------------------------------------------------
+# /// ALLOW SERVERSIDE INCLUDES ///
+# ----------------------------------------------------------------------
+
 Options +Includes
 AddHandler server-parsed .shtml .html .htm
 AddHandler php5-script .php
 
-ErrorDocument 400 http://simoncorry.com/400.php
-ErrorDocument 401 http://simoncorry.com/402.php
-ErrorDocument 403 http://simoncorry.com/403.php
-ErrorDocument 404 http://simoncorry.com/404.php
-ErrorDocument 408 http://simoncorry.com/
-ErrorDocument 500 http://simoncorry.com/
 
-# Companies
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^stream$    index.php [NC,L]
+RewriteRule ^portfolio$ index.php [NC,L]
+RewriteRule ^contact$   index.php [NC,L]
+RewriteRule ^labs$      index.php [NC,L]
+</IfModule>
 
-Redirect permanent /hyperakt/ http://hyperakt.com/
-Redirect permanent /hyperakt http://hyperakt.com/
+# ----------------------------------------------------------------------
+# /// IE FORCED UPDATE AND CHROME FRAME ///
+# ----------------------------------------------------------------------
 
-Redirect permanent /inc/ http://inc.com/
-Redirect permanent /inc http://inc.com/ 
+# Force the latest IE version, in various cases when it may fall back to IE7 mode
+#  github.com/rails/rails/commit/123eb25#commitcomment-118920
+# Use ChromeFrame if it's installed for a better experience for the poor IE folk
 
-# Social Networks
+<IfModule mod_headers.c>
+  Header set X-UA-Compatible "IE=Edge,chrome=1"
+  # mod_headers can't match by content-type, but we don't want to send this header on *everything*...
+  <FilesMatch "\.(js|css|gif|png|jpe?g|pdf|xml|oga|ogg|m4a|ogv|mp4|m4v|webm|svg|svgz|eot|ttf|otf|woff|ico|webp|appcache|manifest|htc|crx|oex|xpi|safariextz|vcf)$" >
+    Header unset X-UA-Compatible
+  </FilesMatch>
+</IfModule>
 
-Redirect permanent /twitter/ http://twitter.com/#!/simoncorry
-Redirect permanent /twitter http://twitter.com/#!/simoncorry
 
-Redirect permanent /facebook/ http://www.facebook.com/simoncorry
-Redirect permanent /facebook http://www.facebook.com/simoncorry
+# ----------------------------------------------------------------------
+# /// FIRE UP REWRITE ENGINE ///
+# ----------------------------------------------------------------------
 
-Redirect permanent /linkedin/ http://www.linkedin.com/in/simoncorry
-Redirect permanent /linkedin http://www.linkedin.com/in/simoncorry
+# Turning on the rewrite engine is necessary for the following rules and
+# features. FollowSymLinks must be enabled for this to work.
 
-Redirect permanent /plus/ https://plus.google.com/112943355702113622332/
-Redirect permanent /plus https://plus.google.com/112943355702113622332/
+# Some cloud hosting services require RewriteBase to be set: goo.gl/HOcPN
+# If using the h5bp in a subdirectory, use `RewriteBase /foo` instead where
+# 'foo' is your directory.
 
-Redirect permanent /googleplus/ https://plus.google.com/112943355702113622332/
-Redirect permanent /googleplus https://plus.google.com/112943355702113622332/
+# If your web host doesn't allow the FollowSymlinks option, you may need to
+# comment it out and use `Options +SymLinksIfOwnerMatch`, but be aware of the
+# performance impact: http://goo.gl/Mluzd
 
-Redirect permanent /gplus/ https://plus.google.com/112943355702113622332/
-Redirect permanent /gplus https://plus.google.com/112943355702113622332/
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks
+# Options +SymLinksIfOwnerMatch
+  RewriteEngine On
+  RewriteBase /
+</IfModule>
 
-Redirect permanent /google/ https://plus.google.com/112943355702113622332/
-Redirect permanent /google https://plus.google.com/112943355702113622332/
 
-Redirect permanent /dribbble/ http://dribbble.com/simoncorry
-Redirect permanent /dribbble http://dribbble.com/simoncorry
+# ----------------------------------------------------------------------
+# /// SUPPRESS "www." AT THE BEGINNING OF URLS ///
+# ----------------------------------------------------------------------
 
-Redirect permanent /forrst/ http://forrst.com/people/simoncorry
-Redirect permanent /forrst http://forrst.com/people/simoncorry
+# Rewrite "www.example.com -> example.com".
 
-# Main Site
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+</IfModule>
 
-Redirect permanent /mobile/ http://simoncorry.com/
-Redirect permanent /mobile http://simoncorry.com/
 
-Redirect permanent http://mobile.simoncorry.com/ http://simoncorry.com/
-Redirect permanent http://mobile.simoncorry.com http://simoncorry.com/
-
-Redirect permanent /creative/ https://plus.google.com/112943355702113622332/about
-Redirect permanent /creative https://plus.google.com/112943355702113622332/about
-
-Redirect permanent /about/ https://plus.google.com/112943355702113622332/about
-Redirect permanent /about https://plus.google.com/112943355702113622332/about
-
-Redirect permanent /simon/ https://plus.google.com/112943355702113622332/about
-Redirect permanent /simon https://plus.google.com/112943355702113622332/about
-
-Redirect permanent /blog/ https://plus.google.com/112943355702113622332/posts
-Redirect permanent /blog https://plus.google.com/112943355702113622332/posts
-
-Redirect permanent /pixels/ http://simoncorry.com/portfolio
-Redirect permanent /pixels http://simoncorry.com/portfolio
-
-Redirect permanent /projects/ http://simoncorry.com/portfolio
-Redirect permanent /projects http://simoncorry.com/portfolio
-
-Redirect permanent /work/ http://simoncorry.com/portfolio
-Redirect permanent /work http://simoncorry.com/portfolio
-
-Redirect permanent /folio/ http://simoncorry.com/portfolio
-Redirect permanent /folio http://simoncorry.com/portfolio
-
-Redirect permanent /play/ http://labs.simoncorry.com/
-Redirect permanent /play http://labs.simoncorry.com/
-
-Redirect permanent /contact/ https://plus.google.com/112943355702113622332/about
-Redirect permanent /contact https://plus.google.com/112943355702113622332/about
-
-Redirect permanent /hello/ https://plus.google.com/112943355702113622332/about
-Redirect permanent /hello https://plus.google.com/112943355702113622332/about
-
-Redirect permanent /oy/ https://plus.google.com/112943355702113622332/about
-Redirect permanent /oy https://plus.google.com/112943355702113622332/about
+# ----------------------------------------------------------------------
+# /// REMOVE ".php" EXTENSIONS ///
+# ----------------------------------------------------------------------
 
 <IfModule mod_rewrite.c>
 
-RewriteEngine On
-RewriteBase /
+  # remove .php; use THE_REQUEST to prevent infinite loops
+  RewriteCond %{THE_REQUEST} ^GET\ (.*)\.php\ HTTP
+  RewriteRule (.*)\.php$ $1 [R=301]
 
-# remove .php; use THE_REQUEST to prevent infinite loops
-RewriteCond %{THE_REQUEST} ^GET\ (.*)\.php\ HTTP
-RewriteRule (.*)\.php$ $1 [R=301]
+  # remove index
+  RewriteRule (.*)/index$ $1/ [R=301]
 
-# remove index
-RewriteRule (.*)/index$ $1/ [R=301]
+  # remove slash if not directory
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} /$
+  RewriteRule (.*)/ $1 [R=301]
 
-# remove slash if not directory
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} /$
-RewriteRule (.*)/ $1 [R=301]
+  # add .php to access file, but don't redirect
+  RewriteCond %{REQUEST_FILENAME}.php -f
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteRule (.*) $1\.php [L]
+  
+</IfModule>
 
-# add .php to access file, but don't redirect
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteCond %{REQUEST_URI} !/$
-RewriteRule (.*) $1\.php [L]
+
+# ----------------------------------------------------------------------
+# /// PREVENT 404 ERRORS FOR NON-EXISTING REDIRECTED FOLDERS ///
+# ----------------------------------------------------------------------
+
+# without -MultiViews, Apache will give a 404 for a rewrite if a folder of the
+# same name does not exist.
+# webmasterworld.com/apache/3808792.htm
+
+Options -MultiViews
+
+
+# ----------------------------------------------------------------------
+# /// CUSTOM ERROR PAGES ///
+# ----------------------------------------------------------------------
+
+# If you are hosting your site in subdirectory, adjust this accordingly
+# e.g. ErrorDocument 404 /subdir/404.html
+
+# ErrorDocument 404 /404.html
+
+# ErrorDocument 400 /400.html
+# ErrorDocument 401 /402.html
+# ErrorDocument 403 /403.html
+# ErrorDocument 404 /404.html
+# ErrorDocument 408 /408.html
+# ErrorDocument 500 /500.html
+
+
+# ----------------------------------------------------------------------
+# /// CUSTOM REDIRECTS ///
+# ----------------------------------------------------------------------
+
+# Folder to url
+# Redirect permanent /folder_name/ http://url
+
+# Url to url
+# Redirect permanent http://url http://url
+
+# ----------------------------------------------------------------------
+# /// UTF-8 ENCODING ///
+# ----------------------------------------------------------------------
+
+# Use UTF-8 encoding for anything served text/plain or text/html
+AddDefaultCharset utf-8
+
+# Force UTF-8 for a number of file formats
+AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
+
+
+# ----------------------------------------------------------------------
+# /// ADDITIONAL SECURITY ///
+# ----------------------------------------------------------------------
+
+# To avoid displaying the exact version number of Apache being used, add the
+# following to httpd.conf (it will not work in .htaccess):
+# ServerTokens Prod
+
+# "-Indexes" will have Apache block users from browsing folders without a
+# default document Usually you should leave this activated, because you
+# shouldn't allow everybody to surf through every folder on your server (which
+# includes rather private places like CMS system folders).
+<IfModule mod_autoindex.c>
+  Options -Indexes
+</IfModule>
+
+# Block access to "hidden" directories or files whose names begin with a
+# period. This includes directories used by version control systems such as
+# Subversion or Git.
+<IfModule mod_rewrite.c>
+  RewriteCond %{SCRIPT_FILENAME} -d [OR]
+  RewriteCond %{SCRIPT_FILENAME} -f
+  RewriteRule "(^|/)\." - [F]
+</IfModule>
+
+# Block access to backup and source files. These files may be left by some
+# text/html editors and pose a great security danger, when anyone can access
+# them.
+<FilesMatch "(\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist)|~)$">
+  Order allow,deny
+  Deny from all
+  Satisfy All
+</FilesMatch>
+
+
+

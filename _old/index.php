@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="en" class="ie6 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]--> 
+<!--[if IE 7]>   <html lang="en" class="ie7 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]--> 
+<!--[if IE 8]>   <html lang="en" class="ie8 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]--> 
+<!--[if IE 9]>   <html lang="en" class="ie9 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
+<!--[if LT IE 9]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+<html lang="en">
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- ********** BEGIN - HEAD **************************************************************************** -->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<head>
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<meta charset="utf-8" />
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** BEGIN - GLOBALS *********************** -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<?php /* ERROR */ ini_set('error_reporting', E_ALL); ini_set('display_errors', 0); ?>
+<?php /* TAG */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/tag.php"); ?>
+<?php /* PAGE */ $thisPage="Home"; ?>
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** END - GLOBALS ************************* -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** BEGIN - META/LINKS ******************** -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<title>Simon Corry &raquo; Home &raquo; Science &amp; Creativity</title>
+<meta name="Author" content="Simon Corry" />
+<meta name="description" content="Welcome one and all to the new home of science and creativity."/>
+<meta name="keywords" content="simon corry, science &amp; creativity, user experience design, information architecture, design &amp; development"/>
+<meta name="viewport" content="width=960px, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	 
+<?php /* FACEBOOK OG */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/fb-og.php"); ?>
+
+<?php /* LINKS */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/head.php"); ?>
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** END - META/LINKS ********************** -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** BEGIN - FUNCTIONS ********************* -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- /// BEGIN - PRELOAD  /// -->
+
+<script type="text/javascript">
+$(document).ready(function() {	
+    $('#loading-wrapper').show();
+    $('nav').hide();
+    $('#wrapper').hide();
+    $('footer').hide(); 
+	onload = function() {		
+        $('#loading-wrapper').hide();
+        $('nav').fadeIn(600);
+        $('#wrapper').fadeIn(600);
+        $('footer').fadeIn(600);
+    }
+});
+</script>
+
+<!-- /// END - PRELOAD  /// -->
+
+<!-- /// BEGIN - FIXED FOOTER /// -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("footer").pinFooter();
+});
+$(window).resize(function() {
+    $("footer").pinFooter();
+});
+</script>
+
+<!-- /// END - FIXED FOOTER /// -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** END - FUNCTIONS *********************** -->
+
+<!-- ////////////////////////////////////////////////// --> 
+
+</head>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- ********** END - HEAD ****************************************************************************** -->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- ********** BEGIN - BODY **************************************************************************** -->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<body>
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** BEGIN - PRELOADER ********************* -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<div id="loading-wrapper">
+    <div id="loading">&nbsp;</div>
+</div>
+<div id="preload"></div>
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** END - PRELOADER *********************** -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** BEGIN - NAV *************************** -->
+
+<!-- //////////////////////////////////////////////////// -->
+        
+<?php /* NAV */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/nav.php"); ?>      
+        
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** END - NAV ***************************** -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** BEGIN - WRAPPER *********************** -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<div id="wrapper" style="background:transparent;">
+    <div id="content"></div>
+</div>
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** END - WRAPPER ************************* -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** BEGIN - FOOTER ************************ -->
+
+<!-- ////////////////////////////////////////////////// -->   
+         
+<?php /* FOOTER */ include_once($_SERVER['DOCUMENT_ROOT']."/_includes/footer.php"); ?>
+            
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** END - FOOTER ************************** -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** BEGIN - FUNCTIONS ********************* -->
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- /// BEGIN - GOOGLE /// -->
+
+<!-- ANALYTICS -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-24800976-1', 'simoncorry.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+<!-- ////////////////////////////////////////////////// -->
+
+<!-- ********** END - FUNCTIONS *********************** -->
+
+<!-- ////////////////////////////////////////////////// -->    
+
+</body>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- ********** END - BODY ****************************************************************************** -->
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+</html>
