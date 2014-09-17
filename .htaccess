@@ -133,6 +133,98 @@ Options -MultiViews
 # Url to url
 # Redirect permanent http://url http://url
 
+
+# Companies
+
+Redirect permanent /alphapipe/ http://alphapipe.com/
+Redirect permanent /alphapipe http://alphapipe.com/
+
+Redirect permanent /hyperakt/ http://hyperakt.com/
+Redirect permanent /hyperakt http://hyperakt.com/
+
+Redirect permanent /inc/ http://inc.com/
+Redirect permanent /inc http://inc.com/ 
+
+# Social Networks
+
+Redirect permanent /twitter/ http://twitter.com/#!/simoncorry
+Redirect permanent /twitter http://twitter.com/#!/simoncorry
+
+Redirect permanent /facebook/ http://www.facebook.com/simoncorry
+Redirect permanent /facebook http://www.facebook.com/simoncorry
+
+Redirect permanent /linkedin/ http://www.linkedin.com/in/simoncorry
+Redirect permanent /linkedin http://www.linkedin.com/in/simoncorry
+
+Redirect permanent /plus/ https://plus.google.com/112943355702113622332/
+Redirect permanent /plus https://plus.google.com/112943355702113622332/
+
+Redirect permanent /googleplus/ https://plus.google.com/112943355702113622332/
+Redirect permanent /googleplus https://plus.google.com/112943355702113622332/
+
+Redirect permanent /gplus/ https://plus.google.com/112943355702113622332/
+Redirect permanent /gplus https://plus.google.com/112943355702113622332/
+
+Redirect permanent /google/ https://plus.google.com/112943355702113622332/
+Redirect permanent /google https://plus.google.com/112943355702113622332/
+
+Redirect permanent /behance/ http://behance.net/simoncorry
+Redirect permanent /behance http://behance.net/simoncorry
+
+Redirect permanent /dribbble/ http://dribbble.com/simoncorry
+Redirect permanent /dribbble http://dribbble.com/simoncorry
+
+Redirect permanent /forrst/ http://forrst.com/people/simoncorry
+Redirect permanent /forrst http://forrst.com/people/simoncorry
+
+Redirect permanent /github/ http://github.com/simoncorry
+Redirect permanent /github http://github.com/simoncorry
+
+Redirect permanent /delicious/ http://delicious.com/simoncorry
+Redirect permanent /delicious http://delicious.com/simoncorry
+
+Redirect permanent /bitly/ https://bitly.com/u/simoncorry
+Redirect permanent /bitly https://bitly.com/u/simoncorry
+
+Redirect permanent /jsfiddle/ http://jsfiddle.net/user/simoncorry/
+Redirect permanent /jsfiddle http://jsfiddle.net/user/simoncorry/
+
+# Main Site
+
+#Redirect permanent /index.php /hi
+#Redirect permanent /* /hi
+
+Redirect permanent /creative/ http://simoncorry.com/contact
+Redirect permanent /creative http://simoncorry.com/contact
+
+Redirect permanent /about/ http://simoncorry.com/contact
+Redirect permanent /about http://simoncorry.com/contact
+
+Redirect permanent /simon/ http://simoncorry.com/contact
+Redirect permanent /simon http://simoncorry.com/contact
+
+Redirect permanent /blog/ http://simoncorry.com/stream
+Redirect permanent /blog http://simoncorry.com/stream
+
+Redirect permanent /pixels/ http://simoncorry.com/portfolio
+Redirect permanent /pixels http://simoncorry.com/portfolio
+
+Redirect permanent /projects/ http://simoncorry.com/portfolio
+Redirect permanent /projects http://simoncorry.com/portfolio
+
+Redirect permanent /work/ http://simoncorry.com/portfolio
+Redirect permanent /work http://simoncorry.com/portfolio
+
+Redirect permanent /folio/ http://simoncorry.com/portfolio
+Redirect permanent /folio http://simoncorry.com/portfolio
+
+Redirect permanent /play/ http://simoncorry.com/labs
+Redirect permanent /play http://simoncorry.com/labs
+
+Redirect permanent /hello/ http://simoncorry.com/contact
+Redirect permanent /hello http://simoncorry.com/contact
+
+
 # ----------------------------------------------------------------------
 # /// UTF-8 ENCODING ///
 # ----------------------------------------------------------------------

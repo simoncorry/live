@@ -174,20 +174,21 @@ html.no-touch .nav .pixel:hover {
 }
 .nav a.active .active_animation {
     opacity:1;
-    -webkit-animation:active_animation 0.4s 0 1;
-            animation:active_animation 0.4s 0 1;
+    -webkit-animation:active_animation 0.4s ease-in-out;
+            animation:active_animation 0.4s ease-in-out;
+    -webkit-animation-iteration-count:1;
+            animation-iteration-count:1;
 }
-@-webkit-keyframes active_animation
-{
-    0%   {opacity:1; -webkit-transform:scale3d(1,1,1);     transform:scale3d(1,1,1);}
+
+@-webkit-keyframes active_animation {
+    from {opacity:1; -webkit-transform:scale3d(1,1,1);     transform:scale3d(1,1,1);}
     50%  {opacity:1; -webkit-transform:scale3d(100,100,1); transform:scale3d(100,100,1);}
-    100% {opacity:0; -webkit-transform:scale3d(100,100,1); transform:scale3d(100,100,1);}
+    to   {opacity:0; -webkit-transform:scale3d(100,100,1); transform:scale3d(100,100,1);}
 }
-@keyframes active_animation
-{
-    0%   {opacity:1; -webkit-transform:scale3d(1,1,1);     transform:scale3d(1,1,1);}
+@keyframes active_animation {
+    from {opacity:1; -webkit-transform:scale3d(1,1,1);     transform:scale3d(1,1,1);}
     50%  {opacity:1; -webkit-transform:scale3d(100,100,1); transform:scale3d(100,100,1);}
-    100% {opacity:0; -webkit-transform:scale3d(100,100,1); transform:scale3d(100,100,1);}
+    to   {opacity:0; -webkit-transform:scale3d(100,100,1); transform:scale3d(100,100,1);}
 }
 
 
@@ -277,20 +278,22 @@ html.no-touch .labs .pixel:hover,
 /* Animation Flash */
 
 .secondary a.active .active_animation {
-    -webkit-animation:active_animation_secondary 0.3s 0 1;
-            animation:active_animation_secondary 0.3s 0 1;
+    -webkit-animation:active_animation_secondary 0.4s ease-in-out;
+            animation:active_animation_secondary 0.4s ease-in-out;
+    -webkit-animation-iteration-count:1;
+            animation-iteration-count:1;
 }
 @-webkit-keyframes active_animation_secondary
 {
-    0%   {opacity:1; -webkit-transform:scale3d(1,1,1);   transform:scale3d(1,1,1);}
+    from {opacity:1; -webkit-transform:scale3d(1,1,1);   transform:scale3d(1,1,1);}
     50%  {opacity:1; -webkit-transform:scale3d(40,40,1); transform:scale3d(40,40,1);}
-    100% {opacity:0; -webkit-transform:scale3d(40,40,1); transform:scale3d(40,40,1);}
+    to   {opacity:0; -webkit-transform:scale3d(40,40,1); transform:scale3d(40,40,1);}
 }
 @keyframes active_animation_secondary
 {
-    0%   {opacity:1; -webkit-transform:scale3d(1,1,1);   transform:scale3d(1,1,1);}
+    from {opacity:1; -webkit-transform:scale3d(1,1,1);   transform:scale3d(1,1,1);}
     50%  {opacity:1; -webkit-transform:scale3d(40,40,1); transform:scale3d(40,40,1);}
-    100% {opacity:0; -webkit-transform:scale3d(40,40,1); transform:scale3d(40,40,1);}
+    to   {opacity:0; -webkit-transform:scale3d(40,40,1); transform:scale3d(40,40,1);}
 }
 
 

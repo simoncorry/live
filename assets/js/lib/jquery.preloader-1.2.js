@@ -119,13 +119,16 @@
         
         // Initialise
         onload = function() {
+        
+          // Hide Page Content if Direct URL ex. simoncorry.com/contact
+          $('#content').addClass('hide_content hide_content_timer');
           
           // Add one sec delay after load complete  
           $('#loadingAnimationDelay').
             addClass('addDelay');
             
           // Wait for one sec delay and clear loader
-          $('#loadingAnimationDelay').one('animationend webkitAnimationEnd', function(e) {
+          $('#loadingAnimationDelay').one('animationend webkitAnimationEnd mozAnimationEnd msAnimationEnd oAnimationEnd', function(e) {
             
             $('#wrapper')
 	            .addClass('show');
@@ -143,7 +146,7 @@
           });
           
           // Activate Ship
-          $('#activateShip').one('animationend webkitAnimationEnd', function(e) {
+          $('#activateShip').one('animationend webkitAnimationEnd mozAnimationEnd msAnimationEnd oAnimationEnd', function(e) {
 	        
 	        $('.square_cover')
               .addClass('topinvisible');
@@ -155,7 +158,7 @@
 	      });
 	      
 	      // Activate Shroud
-          $('#activateShroud').one('animationend webkitAnimationEnd', function(e) {
+          $('#activateShroud').one('animationend webkitAnimationEnd mozAnimationEnd msAnimationEnd oAnimationEnd', function(e) {
 	        
 	        $('#shroud')
               .addClass('active');
@@ -167,15 +170,63 @@
 	      });
           
           // Activate Page
-          $('#activatePage').one('animationend webkitAnimationEnd', function(e) {
+          $('#activatePage').one('animationend webkitAnimationEnd mozAnimationEnd msAnimationEnd oAnimationEnd', function(e) {
           	
+          	// Allow Scroll/Overflow
           	$('body').css('overflow','visible');
-              
-            // Add active states on load
-            $('section, .animations').addClass('active');
-          
-          });
+            
+            // Show Main
+            $('#main').addClass('active');
+            
+            // When #bio loads...
+            $('.labs').one('animationend webkitAnimationEnd mozAnimationEnd msAnimationEnd oAnimationEnd', function(e) {                
+                
+                // Show Content
+                $('#content').removeClass('hide_content');
+                
+                // Remove Timer
+                $('#content').one('transitionend webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd', function(e) {
+                  
+                  // Timer
+                  $('#content').removeClass('hide_content_timer');
+                  
+                  // Show Main
+                  $('#animations').addClass('active');
+                  
+                  // Start Animation Scripts
+                  cloud_animations();  
+                  ships_loop_right();
+                  
+                });
+                
+            });
         
+          });
+          
+          // Set page animation
+          var set_active_page = function() {
+            // Vars
+            var active_page = $('.content_wrapper').data('active_nav_item');
+            // Logic
+            if(active_page == 'home') {
+              $('li.logo_home').addClass('btn_active');
+              $('li.logo_home').children('a').addClass('active');
+            } else if(active_page == 'stream') {
+              $('li.stream').addClass('btn_active');
+              $('li.stream').children('a').addClass('active');
+            } else if(active_page == 'projects') {
+              $('li.projects').addClass('btn_active');
+              $('li.projects').children('a').addClass('active');
+            } else if(active_page == 'contact') {
+              $('li.contact').addClass('btn_active');
+              $('li.contact').children('a').addClass('active');
+            } else if(active_page == 'labs') {
+              $('li.labs').addClass('btn_active');
+              $('li.labs').children('a').addClass('active');
+            }
+          } 
+          set_active_page();
+          
         }    
       });  
     }

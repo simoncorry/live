@@ -3,6 +3,7 @@ function vs_feeds_output($items_per_feed = 5) {
 
     $feeds = array(
         'twitter'   => 'http://www.queryfeed.net/twitter?q=from%3Asimoncorry',
+        'medium'    => 'https://medium.com/feed/@razmakhin',
         'github'    => 'https://github.com/simoncorry.atom',
         'dribbble'  => 'http://dribbble.com/simoncorry/shots.rss',
         'jsfiddle'  => null,

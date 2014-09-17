@@ -2,9 +2,9 @@
 <!--[if IE 9]><html lang="en" class="ie9 ie" xmlns="http://www.w3.org/1999/xhtml"><![endif]-->
 <html lang="en" class="no-js">
     <head prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/WebPage">
-        <title>Simon Corry</title>
+        <title>Simon Corry &nbsp;|&nbsp; Science &amp; Creativity</title>
         <meta charset="utf-8">
-        <meta name="description" content="Welcome to the new home of science &amp; creativity. A place to see some of my latest experiments.">
+        <meta name="description" content="Welcome to the new home of science &amp; creativity. A place to see and explore some of my latest experiments.">
         <meta name="keywords" content="simon corry, science &amp; creativity, user experience design, information architecture, design &amp; development">
         <!-- Viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -50,6 +50,12 @@
         <!-- CSS -->
         <link type="text/css" rel="stylesheet" href="/assets/css/lib/reset.min.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/lib/jquery.preloader-1.2.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/browsers/browsers.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_clouds.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_ships.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_cannons.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_people.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/styles/main.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/styles/typography.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/loaders/loader_ajax.css">
@@ -61,17 +67,11 @@
         <link type="text/css" rel="stylesheet" href="/assets/css/app/structure/nav.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/forms/inputs.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/forms/buttons.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_clouds.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_ships.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_cannons.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_people.css">
         <!-- JS -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
         <script src="/assets/js/lib/modernizr.js"></script>
-        <script src="/assets/js/lib/google-analytics.js"></script>
         <script src="/assets/js/lib/jquery.preloader-1.2.js"></script>
         <script src="/assets/js/lib/waypoints.min.js"></script>
         <script src="/assets/js/lib/jquery.autosize.min.js"></script>
@@ -85,6 +85,24 @@
     <body id="preloader">
 
 
+        <!-- Browser Blocker -->
+        <div id="browsers">
+            <div class="wrapper">
+                <div class="cols col_1">
+                    <h2>Your Browser is Incompatible</h2>
+                    <p>Your browser is out of date and/or incompatible with our website. A list of compatible browsers can be found below, including Chrome, Firefox, Safari and Internet Explorer 9+.</p><p>You can either open this site in a compatible browser or simply click a logo to go to the relevant download page and upgrade.</p>
+                </div>
+                <div class="cols col_2">
+                    <ul class="clearfix">
+                        <li><a target="_blank" href="http://www.google.com/chrome" title="Download Chrome"><img src="/assets/images/app/browsers/logo_chrome.jpg" alt="Chrome Logo" width="60" height="60" /></a></li>
+                        <li><a target="_blank" href="http://www.mozilla.org/firefox" title="Download Firefox"><img src="/assets/images/app/browsers/logo_firefox.jpg" alt="Firefox Logo" width="60" height="60" /></a></li>
+                        <li><a target="_blank" href="http://www.apple.com/safari" title="Download Safari"><img src="/assets/images/app/browsers/logo_safari.jpg" alt="Safari Logo" width="60" height="60" /></a></li>
+                        <li><a target="_blank" href="http://windows.microsoft.com/ie" title="Download IE"><img src="/assets/images/app/browsers/logo_ie.jpg" alt="IE Logo" width="60" height="60" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <!-- Header -->
         <header id="header" class="clearfix">
             
@@ -92,7 +110,7 @@
             <div class="col lcol">
                 <nav class="activate_nav">
                     <ul class="nav secondary clearfix">
-                        <li class="mobile_hide">
+                        <li class="logo_home mobile_hide">
                             <a class="ajax_load logo logo_secondary" href="/content/home.php">
                                 <? $a = array(9,8,6,8,9,8,9,8,9,8,6,8,9,8,6,8,9,8,9,8,9,8,6,8,9);
                                     for( $i = 0; $i < count($a); $i++ ) : ?>
@@ -181,18 +199,22 @@
                             <header id="bio_header">
                                 <h1>Science &amp; Creativity</h1>
                                 <hr class="hr">
-                                <h2>I'm a creative director by day, gamer at night. Physics junkie and an 8-bit nerd.</h2>
+                                <h2>I'm a Creative Director by day, gamer at night. Physics junkie and an 8-bit nerd.</h2>
                             </header>
-                            <a id="logo_article" class="ajax_load logo" href="/content/home.php">
-                                <? $a = array(9,8,6,8,9,8,9,8,9,8,6,8,9,8,6,8,9,8,9,8,9,8,6,8,9);
-                                    for( $i = 0; $i < count($a); $i++ ) : ?>
-                                    <div class="logo_pixel hover_times p<?=$a[$i]?>"></div>
-                                <? endfor; ?>
-                                <div class="moon"></div>
-                                <div class="ship"></div>
-                                <div class="exhaust"></div>
-                                <div class="active_animation"></div>
-                            </a>
+                            <ul>
+                                <li class="logo_home">
+                                    <a id="logo_article" class="ajax_load logo" href="/content/home.php">
+                                        <? $a = array(9,8,6,8,9,8,9,8,9,8,6,8,9,8,6,8,9,8,9,8,9,8,6,8,9);
+                                            for( $i = 0; $i < count($a); $i++ ) : ?>
+                                            <div class="logo_pixel hover_times p<?=$a[$i]?>"></div>
+                                        <? endfor; ?>
+                                        <div class="moon"></div>
+                                        <div class="ship"></div>
+                                        <div class="exhaust"></div>
+                                        <div class="active_animation"></div>
+                                    </a>
+                                </li>
+                            </ul>
                             <div id="bio_pixel" class="clearfix">
                                 <? for( $i = 0; $i < 882; $i++ ) : ?>
                                     <div class="pixel"></div>
@@ -281,84 +303,97 @@
         </div>
         
         <!-- Animations -->
-        <section class="animations">
+        <section id="animations" class="animations">
         	
-        		<!-- List cloud types -->
-	        	<div class="cloud_types_large">
-		        	<div class="cloud_type_large cloud_type_large_1"></div>
-		        	<div class="cloud_type_large cloud_type_large_2"></div>
-		        	<div class="cloud_type_large cloud_type_large_3"></div>
-		        	<div class="cloud_type_large cloud_type_large_4"></div>
-		        	<div class="cloud_type_large cloud_type_large_5"></div>
-		        	<div class="cloud_type_large cloud_type_large_6"></div>
-	        	</div>
-	        	<div class="cloud_types_medium">
-		        	<div class="cloud_type_medium cloud_type_medium_1"></div>
-		        	<div class="cloud_type_medium cloud_type_medium_2"></div>
-		        	<div class="cloud_type_medium cloud_type_medium_3"></div>
-		        	<div class="cloud_type_medium cloud_type_medium_4"></div>
-		        	<div class="cloud_type_medium cloud_type_medium_5"></div>
-		        	<div class="cloud_type_medium cloud_type_medium_6"></div>
-	        	</div>
-	        	<div class="cloud_types_small">
-		        	<div class="cloud_type_small cloud_type_small_1"></div>
-		        	<div class="cloud_type_small cloud_type_small_2"></div>
-		        	<div class="cloud_type_small cloud_type_small_3"></div>
-	        	</div>
-	        	
-	        	<!-- Display cloud types -->
-	        	<div class="clouds_large">
-	        		<div class="cloud_wrapper">
-			        	<div id="cloud_large_1" class="cloud_large cloud_large_1"></div>
-	        		</div>
-	        		<div class="cloud_wrapper">
-			        	<div id="cloud_large_2" class="cloud_large cloud_large_2"></div>
-	        		</div>
-	        		<div class="cloud_wrapper">
-			        	<div id="cloud_large_3" class="cloud_large cloud_large_3"></div>
-	        		</div>
-	        		<div class="cloud_wrapper">
-			        	<div id="cloud_large_4" class="cloud_large cloud_large_4"></div>
-	        		</div>
-	        	</div>
-	        	<div class="clouds_medium">
-	        		<div class="cloud_wrapper">
-			        	<div id="cloud_medium_1" class="cloud_medium cloud_medium_1"></div>
-	        		</div>
-	        		<div class="cloud_wrapper">
-			        	<div id="cloud_medium_2" class="cloud_medium cloud_medium_2"></div>
-	        		</div>
-	        		<div class="cloud_wrapper">
-			        	<div id="cloud_medium_3" class="cloud_medium cloud_medium_3"></div>
-	        		</div>
-	        		<div class="cloud_wrapper">
-			        	<div id="cloud_medium_4" class="cloud_medium cloud_medium_4"></div>
-	        		</div>
-	        		<div class="cloud_wrapper">
-			        	<div id="cloud_medium_5" class="cloud_medium cloud_medium_5"></div>
-	        		</div>
-	        	</div>
-	        	<div class="clouds_small">
-	        		<div class="cloud_wrapper">
-			        	<div id="cloud_small_1" class="cloud_small cloud_small_1"></div>
-	        		</div>
-	        		<div class="cloud_wrapper">
-			        	<div id="cloud_small_2" class="cloud_small cloud_small_2"></div>
-	        		</div>
-	        	</div>
-	        	
-	        	<!-- Display Ships -->
-	        	<div class="ships_loop_right"></div>
-	        	
-                <!-- Display Drones -->
-	        	<div class="drone_1 cargo_drone_1_wrapper">
-		        	<div class="cargo_drone_1">
-		        		<div class="prop_1"></div>
-		        		<div class="cargo_1"></div>
-		        	</div>
-	        	</div>
+            <!-- List cloud types -->
+	        <div class="cloud_types_large">
+		        <div class="cloud_type_large cloud_type_large_1"></div>
+		        <div class="cloud_type_large cloud_type_large_2"></div>
+		        <div class="cloud_type_large cloud_type_large_3"></div>
+		        <div class="cloud_type_large cloud_type_large_4"></div>
+		        <div class="cloud_type_large cloud_type_large_5"></div>
+		        <div class="cloud_type_large cloud_type_large_6"></div>
+	        </div>
+	        <div class="cloud_types_medium">
+		        <div class="cloud_type_medium cloud_type_medium_1"></div>
+		        <div class="cloud_type_medium cloud_type_medium_2"></div>
+		        <div class="cloud_type_medium cloud_type_medium_3"></div>
+		        <div class="cloud_type_medium cloud_type_medium_4"></div>
+		        <div class="cloud_type_medium cloud_type_medium_5"></div>
+		        <div class="cloud_type_medium cloud_type_medium_6"></div>
+	        </div>
+	        <div class="cloud_types_small">
+		        <div class="cloud_type_small cloud_type_small_1"></div>
+		        <div class="cloud_type_small cloud_type_small_2"></div>
+		        <div class="cloud_type_small cloud_type_small_3"></div>
+	        </div>
+	        
+	        <!-- Display cloud types -->
+	        <div class="clouds_large">
+	            <div class="cloud_wrapper">
+		        	<div id="cloud_large_1" class="cloud_large cloud_large_1"></div>
+	            </div>
+	            <div class="cloud_wrapper">
+		        	<div id="cloud_large_2" class="cloud_large cloud_large_2"></div>
+	            </div>
+	            <div class="cloud_wrapper">
+		        	<div id="cloud_large_3" class="cloud_large cloud_large_3"></div>
+	            </div>
+	            <div class="cloud_wrapper">
+		        	<div id="cloud_large_4" class="cloud_large cloud_large_4"></div>
+	            </div>
+	        </div>
+	        <div class="clouds_medium">
+	            <div class="cloud_wrapper">
+		        	<div id="cloud_medium_1" class="cloud_medium cloud_medium_1"></div>
+	            </div>
+	            <div class="cloud_wrapper">
+		        	<div id="cloud_medium_2" class="cloud_medium cloud_medium_2"></div>
+	            </div>
+	            <div class="cloud_wrapper">
+		        	<div id="cloud_medium_3" class="cloud_medium cloud_medium_3"></div>
+	            </div>
+	            <div class="cloud_wrapper">
+		        	<div id="cloud_medium_4" class="cloud_medium cloud_medium_4"></div>
+	            </div>
+	            <div class="cloud_wrapper">
+		        	<div id="cloud_medium_5" class="cloud_medium cloud_medium_5"></div>
+	            </div>
+	        </div>
+	        <div class="clouds_small">
+	            <div class="cloud_wrapper">
+		        	<div id="cloud_small_1" class="cloud_small cloud_small_1"></div>
+	            </div>
+	            <div class="cloud_wrapper">
+		        	<div id="cloud_small_2" class="cloud_small cloud_small_2"></div>
+	            </div>
+	        </div>
+	        
+	        <!-- Display Ships -->
+	        <div class="ships_loop_right"></div>
+	        
+            <!-- Display Drones -->
+	        <div class="drone_1 cargo_drone_1_wrapper">
+		        <div class="cargo_drone_1">
+		        	<div class="prop_1"></div>
+		        	<div class="cargo_1"></div>
+		        </div>
+	        </div>
 	        	
         </section>
+        
+        
+        <!-- Google Analytics -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+          ga('create', 'UA-24800976-1', 'auto');
+          ga('send', 'pageview');
+        
+        </script>
         
         
     </body>

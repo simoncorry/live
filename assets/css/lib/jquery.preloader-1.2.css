@@ -88,11 +88,17 @@ body {
     -webkit-box-sizing:border-box;
     -moz-box-sizing:   border-box;
     box-sizing:        border-box;
-    -webkit-transition:opacity 0.6s linear;
-    transition:        opacity 0.6s linear;
+    -webkit-transition:opacity    0.6s linear,
+                       visibility 0.6s linear;
+    transition:        opacity    0.6s linear,
+                       visibility 0.6s linear;
 }
 
-#shroud.active {opacity:0;}
+#shroud.active {
+    opacity:0; 
+    visibility:hidden;
+    pointer-events:none;
+}
 
 /* Square */
 
@@ -258,3 +264,11 @@ div.square_cover {
 	-webkit-transform:scale3d(0,0,1);
 	        transform:scale3d(0,0,1);
 }
+
+
+
+/* Old Browser Block */
+.no-csstransitions body {display:block !important; overflow:auto !important;}
+.no-csstransitions #shroud {display:none !important;}
+.no-csstransitions #wrapper {display:block !important;}
+.no-csstransitions #activatePage {visibility:visible !important;}

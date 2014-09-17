@@ -1,4 +1,4 @@
-<div class="content_wrapper">
+<div class="content_wrapper" data-active_nav_item="labs">
     
     <div class="article_wrapper">
         <article class="article">

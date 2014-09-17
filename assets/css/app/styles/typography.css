@@ -82,7 +82,7 @@ strong,b {font-weight:700;}
     line-height:2.0rem;
     text-transform:uppercase;
     color:rgb(104,107,109);
-    padding-top:20px;
+    padding-top:20px !important;
 }
 
 
@@ -91,7 +91,7 @@ strong,b {font-weight:700;}
 @media only screen 
 and (max-width : 415px) {
 
-    body {font-size:1.6rem; line-height:2.4rem;}
+    body {font-size:1.5rem; line-height:2.4rem;}
     
     /* Headers */
     h1 {font-size:2.1rem;}

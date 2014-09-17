@@ -803,17 +803,3 @@ cannon_animation_1 = function() {
     }; cannon_1_loop();
     
 };
-
-
-// LOAD FUNCTIONS
-
-$(function() {
-
-  setTimeout(function() {
-
-    cloud_animations();  
-    ships_loop_right();
-    
-  }, 4000);
-    
-});

@@ -1,4 +1,4 @@
-<div class="content_wrapper">
+<div class="content_wrapper" data-active_nav_item="contact">
     
     <div class="article_wrapper">
         <article class="article">
@@ -47,6 +47,10 @@
                     <li><a href="http://dribbble.com/simoncorry"    target="_blank" class="touch_link dribbble">View project shots by Simon Corry</a></li>      
                     <li><a href="http://github.com/simoncorry"      target="_blank" class="touch_link github">See code examples by Simon Corry</a></li>
                     <li><a href="http://linkedin.com/in/simoncorry" target="_blank" class="touch_link linkedin">Connect with Simon Corry</a></li>
+                    <!--
+                    <li><a href="http://pinterest.com/simoncorry"   target="_blank" class="touch_link pinterest mobile_hide_small">Collect pins by Simon Corry</a></li>
+                    <li><a href="http://behance.net/simoncorry"     target="_blank" class="touch_link behance mobile_hide_small">View projects by Simon Corry</a></li>
+                    -->
                 </ul>
 
                 <hr class="hr">
