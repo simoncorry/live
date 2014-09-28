@@ -3,13 +3,13 @@ function vs_feeds_output($items_per_feed = 5) {
 
     $feeds = array(
         'twitter'   => 'http://www.queryfeed.net/twitter?q=from%3Asimoncorry',
-        'medium'    => 'https://medium.com/feed/@razmakhin',
+        'medium'    => 'https://medium.com/feed/@simoncorry',
         'github'    => 'https://github.com/simoncorry.atom',
         'dribbble'  => 'http://dribbble.com/simoncorry/shots.rss',
         'jsfiddle'  => null,
         'pinterest' => 'http://pinterest.com/simoncorry/feed.rss',
-        'delicious' => 'http://feeds.delicious.com/v2/rss/simoncorry',
-        'bitly'     => 'https://bitly.com/u/simoncorry.rss'
+        'delicious' => 'http://feeds.delicious.com/v2/rss/simoncorry'
+        /* 'bitly'     => 'https://bitly.com/u/simoncorry.rss' */
     );
     
     $db = new mysqli('internal-db.s165780.gridserver.com', 'db165780_society', 'AZoi7NVx2e;@kx', 'db165780_social');

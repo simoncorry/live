@@ -180,22 +180,24 @@
             
             // When #bio loads...
             $('.labs').one('animationend webkitAnimationEnd mozAnimationEnd msAnimationEnd oAnimationEnd', function(e) {                
-                
+
                 // Show Content
                 $('#content').removeClass('hide_content');
                 
                 // Remove Timer
-                $('#content').one('transitionend webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd', function(e) {
+                $('#content').one('transitionend webkitTransitionEnd', function(e) {
                   
                   // Timer
                   $('#content').removeClass('hide_content_timer');
                   
+                  // Start Animation Scripts
+                  if(!$('#animations').hasClass('active')) {
+                    cloud_animations();  
+                    ships_loop_right();
+                  }
+                  
                   // Show Main
                   $('#animations').addClass('active');
-                  
-                  // Start Animation Scripts
-                  cloud_animations();  
-                  ships_loop_right();
                   
                 });
                 

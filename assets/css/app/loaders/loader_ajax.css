@@ -21,7 +21,7 @@
 /* Ajax Loader */
 
 .ajax_loader {
-    z-index:999999;
+    z-index:99999;
     position:fixed;
     left:40px; bottom:40px;
     width:36px;

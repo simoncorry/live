@@ -4,7 +4,8 @@
         <article class="article">
             <header>         
                 <h3>Say Hello</h3>
-                <hr class="hr">
+                <div class="hr_top"></div>
+                <div class="hr_bottom"></div>
                 
                 <form id="contact" name="contact" method="post">
                     <fieldset>
@@ -28,7 +29,8 @@
                     </div>
                 </div>
                 
-                <hr class="hr">
+                <div class="hr_top under"></div>
+                <div class="hr_bottom under"></div>
                 <h4 class="icon letter"><a>Letter Icon</a></h4>
             </header>
         </article>
@@ -38,7 +40,8 @@
         <article class="article">
             <header>
                 <h3>Useful Links</h3>
-                <hr class="hr">
+                <div class="hr_top"></div>
+                <div class="hr_bottom"></div>
                 
                 <a href="/assets/downloads/simon-corry-cv_digital.pdf" target="_blank" class="button margin_bottom_40 touch_link">Download CV</a>
     
@@ -53,7 +56,8 @@
                     -->
                 </ul>
 
-                <hr class="hr">
+                <div class="hr_top under"></div>
+                <div class="hr_bottom under"></div>
                 <h4 class="icon link"><a>Link Icon</a></h4>
             </header>
         </article>

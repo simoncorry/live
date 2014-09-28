@@ -52,10 +52,10 @@
         <link type="text/css" rel="stylesheet" href="/assets/css/lib/jquery.preloader-1.2.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/browsers/browsers.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations.css">
+        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_people.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_clouds.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_ships.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_cannons.css">
-        <link type="text/css" rel="stylesheet" href="/assets/css/app/animations/animations_people.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/styles/main.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/styles/typography.css">
         <link type="text/css" rel="stylesheet" href="/assets/css/app/loaders/loader_ajax.css">
@@ -198,7 +198,8 @@
                         <article class="article">
                             <header id="bio_header">
                                 <h1>Science &amp; Creativity</h1>
-                                <hr class="hr">
+                                <div class="hr_top"></div>
+                                <div class="hr_bottom"></div>
                                 <h2>I'm a Creative Director by day, gamer at night. Physics junkie and an 8-bit nerd.</h2>
                             </header>
                             <ul>

@@ -37,11 +37,11 @@ html.no-touch .article.active {opacity:1;}
     position:relative;
     display:block;
     width:100%;
-    max-width:450px;
     height:100%;
     margin:0 auto 33px;
 }
-.article_portfolio .image_link {margin:33px auto 0;}
+.article_portfolio .image_link:first-of-type {margin:33px auto 0;}
+.article_portfolio .image_link {margin:20px auto 0;}
 
 #medium_caption p:nth-of-type(1) a::after,
 #dribbble_caption > a::after,
@@ -126,12 +126,11 @@ html.no-touch .article h4.icon:hover {
 
 
 /* Medium */
-#medium_caption div > p:nth-of-type(1) {max-width:450px;}
 #medium_caption div > p:nth-of-type(2) {padding-bottom:15px;}
 
 /* Github */
 #github_caption ul {list-style-type:none;}
-#github_caption > div {padding:0 20px;}
+#github_caption > div {max-width:400px; margin:0 auto;}
 #github_caption > div:nth-of-type(2) {padding-bottom:15px;}
 #github_caption > div:first-of-type,
 #github_caption div:nth-of-type(3) a,
@@ -142,6 +141,7 @@ html.no-touch .article h4.icon:hover {
 #dribbble_caption p:nth-of-type(1) {display:none;}
 
 /* Pinterest */
+#pinterest_caption p:nth-of-type(1) {max-width:100%;}
 #pinterest_caption p:nth-of-type(2) {display:none;}
 
 
@@ -277,14 +277,11 @@ and (max-width : 415px) {
     .article_portfolio h1,
     .article_portfolio h2,
     .article_portfolio h3,
-    .article_portfolio p {padding:0 15px;}
-    
-    .article_stream .image_link,
-    .article_portfolio .image_link {padding:0 5px;}
+    .article_portfolio p,
+    #github_caption > div {padding:0 15px;}
     
     #medium_caption p:nth-of-type(1),
-    #pinterest_caption p:nth-of-type(1) {padding:0 5px;}
-    #dribbble_caption > a:nth-of-type(1) {padding:0 5px;}
+    #pinterest_caption p:nth-of-type(1) {padding:0;}
     
     /* Content */
     .content_wrapper {padding-bottom:40px;}

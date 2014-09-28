@@ -8,6 +8,12 @@ $(function() {
   }
   eventtype = mobilecheck() ? 'touchend' : 'click';
   
+  // Check for iPhone
+  isiPhone = navigator.userAgent.match(/iPhone/i) != null;
+  // Check for iPad
+  isiPad = navigator.userAgent.match(/iPad/i) != null;
+  
+  
   // Allow short delay for touch
   touch_delay = function() {
     if(eventtype == 'click'){delayed_function_name(); return;}

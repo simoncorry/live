@@ -2,13 +2,13 @@
 
 $feeds = array(
     'twitter'   => 'http://www.queryfeed.net/twitter?q=from%3Asimoncorry',
-    'medium'    => 'https://medium.com/feed/@razmakhin',
+    'medium'    => 'https://medium.com/feed/@simoncorry',
     'github'    => 'https://github.com/simoncorry.atom',
     'dribbble'  => 'http://dribbble.com/simoncorry/shots.rss',
     'jsfiddle'  => null,
     'pinterest' => 'http://pinterest.com/simoncorry/feed.rss',
-    'delicious' => 'http://feeds.delicious.com/v2/rss/simoncorry',
-    'bitly'     => 'https://bitly.com/u/simoncorry.rss'
+    'delicious' => 'http://feeds.delicious.com/v2/rss/simoncorry'
+    /* 'bitly'     => 'https://bitly.com/u/simoncorry.rss' */
 );
 // http://feeds.feedburner.com/behance/vorr
 
@@ -21,7 +21,6 @@ $db = new mysqli('internal-db.s165780.gridserver.com', 'db165780_society', 'AZoi
 
 function do_inserts($a) {
     global $db;
-    $guids = array();
     $vars = array();
     $vals = array();
     foreach( $a AS $var => $val ) {
@@ -31,13 +30,15 @@ function do_inserts($a) {
     $vars = implode(',', $vars);
     $vals = implode(',', $vals);
     $db->query("INSERT INTO vs_feeds ({$vars}) VALUES ({$vals})");
-    $guids[] = "'{$a['guid']}'";
+}
+
+function clean_up($service, $guids) {
+    global $db;
     // remove deprecated items
     $guids = implode(',', $guids);
     $db->query( "DELETE FROM vs_feeds WHERE service = '{$service}' AND guid NOT IN ( {$guids} )");
+    echo("DELETE FROM vs_feeds WHERE service = '{$service}' AND guid NOT IN ( {$guids} )<br>");
 }
-
-
 
 foreach( $feeds AS $service => $url ) {
     if(!$url) continue;
@@ -46,6 +47,7 @@ foreach( $feeds AS $service => $url ) {
     $reader->init();
     $reader->handle_content_type();
     // read the items
+    $guids = array();
     foreach($reader->get_items() as $item) {
         $caption = $item->get_description();
         if( $service == 'pinterest' ) {
@@ -60,12 +62,15 @@ foreach( $feeds AS $service => $url ) {
             'post_date' => strtotime($item->get_date()),
         );
         do_inserts($a);
+        $guids[] = "'{$a['guid']}'";
     }
+    clean_up($service, $guids);
 }
 
 // okay now let's do JSFiddle API
 $fiddles = json_decode( file_get_contents( 'http://jsfiddle.net/api/user/simoncorry/demo/list.json' ) );
 if($fiddles) {
+    $guids = array();
     $service = 'jsfiddle';
     foreach( $fiddles AS $fiddle ) {
         $guids[] = "'{$fiddle->url}'";
@@ -79,6 +84,7 @@ if($fiddles) {
         );
         do_inserts($a);
     }
+    clean_up($service, $guids);
 }
 
 
